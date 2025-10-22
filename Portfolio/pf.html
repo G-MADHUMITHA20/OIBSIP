@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhumitha G | Portfolio</title>
+  <link rel="stylesheet" href="pf.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo" class="logo-img" />
+        <h1 class="logo-text">Madhumitha G</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about" class="section">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Second-year Computer Science and Engineering student with a strong foundation in Python and C
+          programming. Passionate about coding and problem-solving. Currently learning full-stack development and a
+          member of IEEE COMPUTER SOCIETY. Eager to contribute technical skills to real-world projects and
+          continuously explore emerging technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Programming Languages: C, Python, Java</li>
+      <li>Git and GitHub</li>
+      <li>Exposure to data analysis concepts and tools</li>
+      <li>HTML, CSS, and JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>PointIT – Dynamic Notes App</h3>
+        <p>
+          Designed and developed a notes management application using HTML, CSS, and JavaScript,
+          leveraging Local Storage to persist categorized notes with create, read, and delete functionality.
+        </p>
+        <button onclick="openProjectModal('notes')">View Details</button>
+      </div>
+
+      <div class="project-card">
+        <h3>To-Do List Web App</h3>
+        <p>
+          Implemented a task tracking tool with real-time task addition, completion toggling, and removal using
+          DOM manipulation and event-driven JavaScript.
+        </p>
+        <button onclick="openProjectModal('todo')">View Details</button>
+      </div>
+
+      <div class="project-card">
+        <h3>Age Calculator</h3>
+        <p>
+          Built an interactive age calculator that dynamically computes and displays age based on
+          user-provided date input using JavaScript date functions.
+        </p>
+        <button onclick="openProjectModal('agecalc')">View Details</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <p>Download my resume here.</p>
+    <button onclick="downloadMyResume()">Download Resume</button>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> <a href="mailto:gmadhumitha1357@gmail.com">gmadhumitha1357@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/madhumitha-g-a72137328/" target="_blank">linkedin.com/in/madhumitha-g-a72137328/</a></p>
+      </div>
+
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Portfolio | All Rights Reserved</p>
+  </footer>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <h3>Choose an Option</h3>
+      <div class="modal-buttons">
+        <button id="liveDemoBtn">View Live Demo</button>
+        <button id="githubBtn">View GitHub</button>
+        <button id="exitBtn">Exit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="pf.js"></script>
+</body>
+</html>
