@@ -36,5 +36,5 @@ function convertTemp() {
 
     result.innerHTML = `Result: ${converted.toFixed(2)} ${to === "celsius" ? "°C" : to === "fahrenheit" ? "°F" : "K"}`;
 }
-
+//end
 
